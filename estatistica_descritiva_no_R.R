@@ -30,7 +30,10 @@ dados <- read.csv2('Banco de Dados 2.csv', check.names = F)
 
 ### O enconding indica como é codificado o caracter especial, como acentos.
 
-dados <- read.csv2('Banco de Dados 2.csv', fileEncoding = 'latin1')
+dados <- read.csv2('Banco de Dados 2.csv', fileEncoding = 'latin1', 
+                   stringsAsFactors = T)
+
+### O stringsAsFactors transforma as variáveis categóricas em fatores.
 
 # Como descobrir o encoding da tabela? -----------------------------------------------------------------------------------------------------
 
