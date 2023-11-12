@@ -25,6 +25,13 @@ dados <- read.csv2('Banco de Dados 2.csv', check.names = F)
 ### com separador de colunas com ponto de vírgula e o separador decimal com 
 ### vírgula.
 
+# Lidando com tabelas com acentos ----------------------------------------------------------------------------------------------------------
+
+
+
+# Visualizando o banco de dados ------------------------------------------------------------------------------------------------------------
+
+View(dados)
 
 
 
