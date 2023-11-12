@@ -8,6 +8,7 @@
 
 library(dplyr)
 library(psych)
+library(stringi)
 
 # Carregar dados ---------------------------------------------------------------------------------------------------------------------------
 
@@ -17,7 +18,7 @@ dados <- read.csv('Banco de Dados 2.csv', sep = ';', dec = ',', check.names = F)
 ### e o ponto como separador decimal. Por isso, é necessário informar.
 
 ### Como existe um nome de coluna com acento o argumento check.names = F
-### impede do read.csv checar os nomes de colunas.
+### impede do read.csv checar os nomes de colunas com caracteres especiais.
 
 dados <- read.csv2('Banco de Dados 2.csv', check.names = F)
 
@@ -27,12 +28,21 @@ dados <- read.csv2('Banco de Dados 2.csv', check.names = F)
 
 # Lidando com tabelas com acentos ----------------------------------------------------------------------------------------------------------
 
+### O enconding indica como é codificado o caracter especial, como acentos.
 
+dados <- read.csv2('Banco de Dados 2.csv', fileEncoding = 'latin1')
+
+# Como descobrir o encoding da tabela? -----------------------------------------------------------------------------------------------------
+
+stringi::stri_enc_detect('Banco de Dados 2.csv')
+
+### Essa função mostra a probabilidade de cada tipo de encoding e a
+### linguagem.
 
 # Visualizando o banco de dados ------------------------------------------------------------------------------------------------------------
 
 View(dados)
-
+glimpse(dados)
 
 
 
