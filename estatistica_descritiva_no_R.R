@@ -8,3 +8,35 @@
 
 library(dplyr)
 library(psych)
+
+# Carregar dados ---------------------------------------------------------------------------------------------------------------------------
+
+dados <- read.csv('Banco de Dados 2.csv', sep = ';', dec = ',', check.names = F)
+
+### O read.csv usa como padrão a vírgula como separador de coluna 
+### e o ponto como separador decimal. Por isso, é necessário informar.
+
+### Como existe um nome de coluna com acento o argumento check.names = F
+### impede do read.csv checar os nomes de colunas.
+
+dados <- read.csv2('Banco de Dados 2.csv', check.names = F)
+
+### Essa opção acima permite fazer a leitura do banco de dados que está
+### com separador de colunas com ponto de vírgula e o separador decimal com 
+### vírgula.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
