@@ -1,2 +1,2 @@
-# estatistica_descritiva_no_R
+# Estatistica Descritiva no R
 Script com códigos para realizar análises estatísticas descritivas de tabelas.
