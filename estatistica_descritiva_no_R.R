@@ -68,11 +68,17 @@ prop.table(table(dados$Genero, dados$Grau_de_Instruçao))
 
 # Tabelas de frequências para variáveis quantitativas --------------------------------------------------------------------------------------
 
+### Variáveis quantitativas discretas
 
+table(dados$N_Filhos)
+table(dados$Idade)
 
+prop.table(table(dados$N_Filhos))
+prop.table(table(dados$Idade))
 
+### Variáveis quantitativas contínuas
 
-
+#### Para valores contínuos apenas é possível criar faixas de valores
 
 
 
