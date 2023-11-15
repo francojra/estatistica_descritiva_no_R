@@ -47,9 +47,18 @@ stringi::stri_enc_detect('Banco de Dados 2.csv')
 View(dados)
 glimpse(dados)
 
+# Análises Descritivas ---------------------------------------------------------------------------------------------------------------------
 
+### Frequências absolutas
 
+table(dados$Genero)
+table(dados$Grau_de_Instruçao)
 
+### Tabela cruzada com frequências absolutas
+
+table(dados$Genero, dados$Grau_de_Instruçao)
+
+### Frequências relativas
 
 
 
