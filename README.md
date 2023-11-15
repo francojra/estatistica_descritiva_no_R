@@ -1,10 +1,10 @@
 # Estatistica Descritiva no R
 
-#### Autoria do script: Jeanne Franco
-#### Data: 11/11/23
-#### Referência: https://www.youtube.com/watch?v=jZvQ4N0nuDY&list=PLOw62cBQ5j9VE9X4cCCfFMjW_hhEAJUhU&index=5
+### Autoria do script: Jeanne Franco
+### Data: 11/11/23
+### Referência: https://www.youtube.com/watch?v=jZvQ4N0nuDY&list=PLOw62cBQ5j9VE9X4cCCfFMjW_hhEAJUhU&index=5
 
-### Tópicos do script
+#### Tópicos do script
 1. Carregar pacotes;
 2. Carregar dados;
 3. Lidando com tabelas com acentos;
