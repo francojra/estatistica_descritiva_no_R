@@ -80,6 +80,34 @@ prop.table(table(dados$Idade))
 
 #### Para valores contínuos apenas é possível criar faixas de valores
 
+#### Passo 1: analisar a amplitude (valores máximos e mínimos)
 
+range(dados$Salario)
 
+#### Passo 2: avaliar a quantidade de categorias
 
+nclass.Sturges(dados$Salario)
+
+#### Passo 3: criação de tabela com faixas de valores
+
+table(cut(dados$Salario, seq(0, 6, l = 7)))
+
+#### A função cut() é responsável por dividir a tabela.
+#### O l = 7 indica a quantidade de faixas, no caso, 7.
+#### Interpretação: entre a categoria 0-1 existe 1 pessoa,
+#### na categoria 1-2 existem 6 pessoas, e assim por diante.
+#### Essa tabela mostra as faixas de salários e não os salários
+#### em si.
+
+# Função summary() - Média, mediana, quartis, máximos e mínimos ----------------------------------------------------------------------------
+
+summary(dados$N_Filhos)
+summary(dados$Salario)
+
+# Funções describe() e describeBy() -  Média, desvio, erro e mediana... --------------------------------------------------------------------
+
+describe(dados$N_Filhos)
+
+describeBy(dados$Salario, group = dados$Genero)
+
+describeBy(dados$Salario, group = dados$Genero:dados$Grau_de_Instruçao)
