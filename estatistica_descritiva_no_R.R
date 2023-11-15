@@ -47,8 +47,6 @@ stringi::stri_enc_detect('Banco de Dados 2.csv')
 View(dados)
 glimpse(dados)
 
-# Análises Descritivas ---------------------------------------------------------------------------------------------------------------------
-
 # Tabelas de frequências para variáveis categóricas ----------------------------------------------------------------------------------------
 
 ### Frequências absolutas
@@ -104,7 +102,7 @@ table(cut(dados$Salario, seq(0, 6, l = 7)))
 summary(dados$N_Filhos)
 summary(dados$Salario)
 
-# Funções describe() e describeBy() -  Média, desvio, erro e mediana... --------------------------------------------------------------------
+# Funções describe() e describeBy() -  Média, desvio, erro, mediana, skew, kurtosis, etc. --------------------------------------------------
 
 describe(dados$N_Filhos)
 
