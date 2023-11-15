@@ -49,6 +49,8 @@ glimpse(dados)
 
 # Análises Descritivas ---------------------------------------------------------------------------------------------------------------------
 
+# Tabelas de frequências para variáveis categóricas ----------------------------------------------------------------------------------------
+
 ### Frequências absolutas
 
 table(dados$Genero)
@@ -59,6 +61,12 @@ table(dados$Grau_de_Instruçao)
 table(dados$Genero, dados$Grau_de_Instruçao)
 
 ### Frequências relativas
+
+prop.table(table(dados$Genero))
+prop.table(table(dados$Grau_de_Instruçao))
+prop.table(table(dados$Genero, dados$Grau_de_Instruçao))
+
+# Tabelas de frequências para variáveis quantitativas --------------------------------------------------------------------------------------
 
 
 
